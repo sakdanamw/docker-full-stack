@@ -12,7 +12,7 @@ services:
     volumes:
       - ./web:/var/www:cached
       - ./logs/nginx:/var/log/nginx
-      - ./sites:/etc/nginx/sites-available
+      - ./nginx/sites:/etc/nginx/sites-available
       - ./nginx/ssl/:/etc/nginx/ssl
     ports:
       - "80:80"
